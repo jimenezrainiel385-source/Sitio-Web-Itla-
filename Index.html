@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ITLA - Instituto Tecnológico de las Américas</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- ══════════ TOP BAR ══════════ -->
+  <div class="bg-primary px-4 py-2">
+    <div class="row align-items-center justify-content-between">
+     
+      <div class="col-4 col-md-2 col-lg-1">
+        <img src="IMG/Logo.jpg" alt="Logo ITLA" class="img-fluid object-fit-contain" />
+      </div>
+      
+      <div class="col-8 col-md-6 col-lg-4 d-flex align-items-center justify-content-end gap-3">
+        <div class="input-group">
+          <input type="text" class="form-control rounded-pill rounded-end border-0" placeholder="¿Qué quieres buscar?" />
+          <button class="btn btn-danger rounded-pill rounded-start ms-1">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <i class="bi bi-grid-3x3-gap-fill text-white fs-5"></i>
+        <i class="bi bi-globe2 text-white fs-5"></i>
+      </div>
+    </div>
+  </div>
+
+<!-- ══════════ NAVBAR ══════════ -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <div class="container-fluid px-4">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav gap-1">
+       
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="index.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Inicio</a>
+          </li>
+          
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-semibold text-primary" href="#" data-bs-toggle="dropdown" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Sobre ITLA <i class="bi bi-chevron-down small"></i></a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item text-primary" href="quienes.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Quienes somos</a></li>
+              <li><a class="dropdown-item text-primary" href="Historia.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Historia</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Organigrama</a></li>
+              <li><a class="dropdown-item text-primary" href="rectoria.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Rectoría</a></li>
+              <li><a class="dropdown-item text-primary d-flex justify-content-between align-items-center" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Vicerrectoría <i class="bi bi-caret-right-fill small text-secondary"></i></a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Marco legal</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Normativas Académicas</a></li>
+              <li><a class="dropdown-item text-primary" href="CalidadDeGestion.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Calidad en la gestión</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-semibold text-primary" href="#" data-bs-toggle="dropdown" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Oferta Académica <i class="bi bi-chevron-down small"></i></a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item text-primary" href="Tecnicosuperior.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Técnico Superior</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Educación Continua</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Admisiones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Becas</a>
+          </li>
+          
+          <!-- Estudiantes -->
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-semibold text-primary" href="#" data-bs-toggle="dropdown" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Estudiantes <i class="bi bi-chevron-down small"></i></a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Residencia Académica</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Transporte</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Biblioteca</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">ILS – ITLA Language School</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Bienestar Estudiantil</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Registro</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Emprendetec</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-semibold text-primary" href="#" data-bs-toggle="dropdown" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Docentes <i class="bi bi-chevron-down small"></i></a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item text-primary" href="Cafedigital.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Café digital ITLA</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Aula Virtual</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Campus Virtual</a></li>
+              <li><a class="dropdown-item text-primary" href="GestionDocente.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Gestión Docente</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">ITLA Alumni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="Transparencia.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Transparencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Actualidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="contacto.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Contactos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════ HERO CAROUSEL ══════════ -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner ratio ratio-21x9">
+      <div class="carousel-item active">
+        <img src="IMG/crs1.jpg" class="d-block w-100 object-fit-cover" alt="Primera foto ITLA">
+      </div>
+      <div class="carousel-item">
+        <img src="IMG/crs2.jpg" class="d-block w-100 object-fit-cover" alt="Segunda foto ITLA">
+      </div>
+      <div class="carousel-item">
+        <img src="IMG/crs3.jpg" class="d-block w-100 object-fit-cover" alt="Tercera foto ITLA">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark bg-opacity-50 rounded-circle p-3"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon bg-dark bg-opacity-50 rounded-circle p-3"></span>
+    </button>
+  </div>
+
+  <!-- ══════════ ICON GRID ══════════ -->
+  <section class="py-5 px-4 bg-white">
+    <div class="container-fluid">
+      <div class="row g-3 justify-content-center mb-3">
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="border rounded text-center p-4 h-100">
+            <i class="bi bi-globe-americas text-primary fs-1 d-block mb-3"></i>
+            <span class="fw-bold text-uppercase small">ITLA Internacional</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="border rounded text-center p-4 h-100">
+            <i class="bi bi-laptop text-primary fs-1 d-block mb-3"></i>
+            <span class="fw-bold text-uppercase small">Plataforma Virtual</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="border rounded text-center p-4 h-100">
+            <i class="bi bi-translate text-primary fs-1 d-block mb-3"></i>
+            <span class="fw-bold text-uppercase small">Escuela de Idiomas</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="border rounded text-center p-4 h-100">
+            <i class="bi bi-patch-check text-primary fs-1 d-block mb-3"></i>
+            <span class="fw-bold text-uppercase small">ITLA Test Center</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="border rounded text-center p-4 h-100">
+            <i class="bi bi-person-walking text-primary fs-1 d-block mb-3"></i>
+            <span class="fw-bold text-uppercase small">Deportes y Cultura</span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-3 justify-content-center mb-3">
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="border rounded text-center p-4 h-100">
+            <i class="bi bi-signpost-split text-primary fs-1 d-block mb-3"></i>
+            <span class="fw-bold text-uppercase small">Programa de Extensión</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="border rounded text-center p-4 h-100">
+            <i class="bi bi-person-bounding-box text-primary fs-1 d-block mb-3"></i>
+            <span class="fw-bold text-uppercase small">Egresados</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="border rounded text-center p-4 h-100">
+            <i class="bi bi-geo-alt text-primary fs-1 d-block mb-3"></i>
+            <span class="fw-bold text-uppercase small">Recintos y Extensiones</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="border rounded text-center p-4 h-100">
+            <i class="bi bi-mortarboard text-primary fs-1 d-block mb-3"></i>
+            <span class="fw-bold text-uppercase small">ITLAcademy</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="border rounded text-center p-4 h-100">
+            <i class="bi bi-badge-3d text-primary fs-1 d-block mb-3"></i>
+            <span class="fw-bold text-uppercase small">Protoscanner 3D</span>
+          </div>
+        </div>
+      </div>
+      <div class="row g-3 justify-content-center">
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="border rounded text-center p-4 h-100">
+            <i class="bi bi-send text-primary fs-1 d-block mb-3"></i>
+            <span class="fw-bold text-uppercase small">Emprendimiento e Innovación</span>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-2">
+          <div class="border rounded text-center p-4 h-100">
+            <i class="bi bi-person-vcard text-primary fs-1 d-block mb-3"></i>
+            <span class="fw-bold text-uppercase small">Graduación</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CTA BANNER ══════════ -->
+  <section class="position-relative text-center py-5">
+    <img src="IMG/IMG1.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1" alt="Fondo CTA">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 z-n1"></div>
+    
+    <div class="container py-5 my-5">
+      <h2 class="text-white fw-bold mb-4">¡Tu futuro profesional empieza aquí!</h2>
+      <a href="#" class="btn btn-danger fw-bold px-5 py-2 rounded-pill text-uppercase">INSCRÍBETE</a>
+    </div>
+  </section>
+
+  <!-- ══════════ NUEVAS CARRERAS ══════════ -->
+  <section class="py-5 px-4 bg-light">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center gap-2 mb-4">
+        <i class="bi bi-buildings text-primary fs-4"></i>
+        <h3 class="fw-bold text-primary mb-0 border-bottom border-danger border-3 pb-1">Nuevas Carreras</h3>
+      </div>
+      <div class="row g-3 mb-4">
+        <div class="col-md-4">
+          <div class="card border-0 overflow-hidden h-100">
+            <div class="ratio ratio-16x9">
+              <img src="IMG/videojuegos.jpg" class="card-img object-fit-cover" alt="VR" />
+              <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+            </div>
+            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+              <span class="border border-2 border-white text-white fw-bold fs-5 text-center p-3 bg-dark bg-opacity-25">Simulaciones interactivas y videojuegos</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 overflow-hidden h-100">
+            <div class="ratio ratio-16x9">
+              <img src="IMG/tele.jpg" class="card-img object-fit-cover" alt="Telecom" />
+              <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+            </div>
+            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+              <span class="border border-2 border-white text-white fw-bold fs-5 text-center p-3 bg-dark bg-opacity-25">Telecomunicaciones</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 overflow-hidden h-100">
+            <div class="ratio ratio-16x9">
+              <img src="IMG/ia.jpg" class="card-img object-fit-cover" alt="IA" />
+              <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50"></div>
+            </div>
+            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+              <span class="border border-2 border-white text-white fw-bold fs-5 text-center p-3 bg-dark bg-opacity-25">Inteligencia Artificial</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#" class="btn btn-outline-primary fw-bold px-5 py-2 rounded-pill text-uppercase">+ CARRERAS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ ÚLTIMAS NOVEDADES ══════════ -->
+  <section class="py-5 px-4 bg-white">
+    <div class="container-fluid">
+      <div class="d-flex align-items-center gap-2 mb-4">
+        <i class="bi bi-buildings text-primary fs-4"></i>
+        <h3 class="fw-bold text-primary mb-0 border-bottom border-danger border-3 pb-1">Últimas Novedades</h3>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="ratio ratio-16x9">
+              <img src="IMG/tuis.jpg" class="card-img-top object-fit-cover" alt="Twitch" />
+            </div>
+            <div class="card-body">
+              <small class="text-muted d-block text-end mb-1">abril 20, 2026</small>
+              <h6 class="fw-bold text-primary">Twitch llega al ITLA con workshop exclusivo para impulsar el talento digital joven</h6>
+              <p class="small text-muted">Santo Domingo. – La plataforma global Twitch realizó un workshop exclusivo en el Instituto Tecnológico de las Américas (ITLA), donde impactó a más de 100 estudiantes destacados...</p>
+               <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill w-100 text-uppercase fw-bold mt-2">LEER MÁS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="ratio ratio-16x9">
+              <img src="IMG/rector.jpg" class="card-img-top object-fit-cover" alt="MIVED" />
+            </div>
+            <div class="card-body">
+              <small class="text-muted d-block text-end mb-1">abril 17, 2026</small>
+              <h6 class="fw-bold text-primary">ITLA y MIVED avanzan en proyectos de expansión y fortalecimiento de infraestructura institucional</h6>
+              <p class="small text-muted">Santo Domingo. – El rector del ITLA, Jimmy Rosario, recibió una delegación del Ministerio de la Vivienda y Edificaciones (MIVED)...</p>
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill w-100 text-uppercase fw-bold mt-2">LEER MÁS</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="ratio ratio-16x9">
+              <img src="IMG/reconocidos.jpg" class="card-img-top object-fit-cover" alt="NASA" />
+            </div>
+            <div class="card-body">
+              <small class="text-muted d-block text-end mb-1">abril 15, 2026</small>
+              <h6 class="fw-bold text-primary">Estudiantes del ITLA son reconocidos tras histórica participación en competencia de la NASA</h6>
+              <p class="small text-muted">Santo Domingo. – El ITLA celebró un acto de reconocimiento en honor a los estudiantes que formaron parte del proyecto RDX...</p>
+              <a href="#" class="btn btn-outline-secondary btn-sm rounded-pill w-100 text-uppercase fw-bold mt-2">LEER MÁS</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CARTA COMPROMISO ══════════ -->
+  <section class="position-relative py-5 px-4 text-white overflow-hidden">
+    <img src="IMG/brg_crt.jpg" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1" alt="Fondo Carta">
+    
+    <div class="container-fluid position-relative z-1">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0">
+          <h2 class="fw-bold display-5 mb-4">Carta Compromiso al Ciudadano</h2>
+          <a href="#" class="btn btn-outline-light fw-bold px-5 py-2 rounded-pill text-uppercase">VER CARTA</a>
+        </div>
+        <div class="col-md-6 d-flex justify-content-center">
+      
+          <img src="IMG/broc.jpg" class="img-fluid w-75" alt="Brochures Carta Compromiso" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="bg-dark py-5 px-4">
+    <div class="container-fluid">
+      <div class="row g-4 text-white">
+        <div class="col-md-3">
+  
+          <div class="w-50">
+            <img src="IMG/Logo.jpg" alt="Logo ITLA" class="img-fluid object-fit-contain" />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold text-uppercase mb-3">Conócenos</h6>
+          <p class="small text-white-50">El Instituto Tecnológico de las Américas (ITLA) es una institución educativa de la República Dominicana que ofrece formación técnica y tecnológica en áreas como desarrollo de software, redes y mecatrónica, con un enfoque práctico y actualizado.</p>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-bold text-uppercase mb-3">Contáctanos</h6>
+          <a href="tel:8097384852" class="text-white-50 text-decoration-none d-block small">Tel: (809)-738-4852</a>
+          <a href="tel:8097932557" class="text-white-50 text-decoration-none d-block small">Tel: (809)-793-2557</a>
+          <a href="mailto:info@itla.edu.do" class="text-white-50 text-decoration-none d-block small">info@itla.edu.do</a>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-bold text-uppercase mb-3">Búscanos</h6>
+          <p class="small text-white-50">Autopista Las Américas, Km. 27, PCSD, La Caleta, Boca Chica 11606, R.D.</p>
+          <div class="ratio ratio-21x9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.8!2d-69.7!3d18.42!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI1JzEyLjAiTiA2OcKwNDInMDAuMCJX!5e0!3m2!1ses!2sdo!4v1" class="rounded border border-secondary" allowfullscreen loading="lazy" title="Mapa ITLA"></iframe>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-bold text-uppercase mb-3">Infórmate</h6>
+          <a href="#" class="text-white-50 text-decoration-none d-block small">Términos de Uso</a>
+          <a href="#" class="text-white-50 text-decoration-none d-block small">Política de Privacidad</a>
+          <a href="#" class="text-white-50 text-decoration-none d-block small">Preguntas Frecuentes</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+ <!-- ══════════ FOOTER BOTTOM ══════════ -->
+  <div class="bg-white border-top py-4 px-4">
+    <div class="row align-items-center gy-4">
+
+      <div class="col-lg-8">
+        <div class="d-flex gap-2 flex-wrap mb-3">
+          <span class="border border-secondary rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-secondary p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A2</span><small>2021</small>
+          </span>
+          <span class="border border-success rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-success p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A3</span><small>2014</small>
+          </span>
+          <span class="border border-secondary rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-secondary p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A4</span><small>2014</small>
+          </span>
+          <span class="border border-warning rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-warning p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">E1</span><small>2022</small>
+          </span>
+          <span class="border border-secondary rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-secondary p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A5</span><small>2019</small>
+          </span>
+          <span class="border border-info rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-info p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A6</span><small>2018</small>
+          </span>
+        </div>
+        <p class="mb-0 small text-muted">© 2026 Todos los Derechos Reservados.</p>
+      </div>
+      
+      
+      <div class="col-lg-4 d-flex flex-column align-items-start align-items-lg-end">
+        <div class="mb-3 col-5 col-md-3 col-lg-5">
+        
+          <img src="IMG/indocal.jpg" alt="Indocal" class="img-fluid object-fit-contain" />
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <span class="fw-bold small text-dark text-uppercase">Síguenos</span>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

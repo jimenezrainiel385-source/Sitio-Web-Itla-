@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Historia - ITLA</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+
+  <!-- TOP BAR -->
+  <div class="bg-primary px-4 py-2">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-4 col-md-2 col-lg-1">
+        <img src="IMG/Logo.jpg" alt="Logo ITLA" class="img-fluid object-fit-contain" />
+      </div>
+      <div class="col-8 col-md-6 col-lg-4 d-flex align-items-center justify-content-end gap-3">
+        <div class="input-group">
+          <input type="text" class="form-control rounded-pill rounded-end border-0" placeholder="¿Qué quieres buscar?" />
+          <button class="btn btn-danger rounded-pill rounded-start ms-1">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <i class="bi bi-grid-3x3-gap-fill text-white fs-5"></i>
+        <i class="bi bi-globe2 text-white fs-5"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <div class="container-fluid px-4">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="index.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-semibold text-primary" href="#" data-bs-toggle="dropdown" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Sobre ITLA <i class="bi bi-chevron-down small"></i></a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item text-primary" href="quienes.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Quienes somos</a></li>
+              <li><a class="dropdown-item text-primary" href="Historia.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Historia</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Organigrama</a></li>
+              <li><a class="dropdown-item text-primary" href="rectoria.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Rectoría</a></li>
+              <li><a class="dropdown-item text-primary d-flex justify-content-between align-items-center" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Vicerrectoría <i class="bi bi-caret-right-fill small text-secondary"></i></a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Marco legal</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Normativas Académicas</a></li>
+              <li><a class="dropdown-item text-primary" href="CalidadDeGestion.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Calidad en la gestión</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-semibold text-primary" href="#" data-bs-toggle="dropdown" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Oferta Académica <i class="bi bi-chevron-down small"></i></a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item text-primary" href="Tecnicosuperior.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Técnico Superior</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Educación Continua</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Admisiones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Becas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-semibold text-primary" href="#" data-bs-toggle="dropdown" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Estudiantes <i class="bi bi-chevron-down small"></i></a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Residencia Académica</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Transporte</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Biblioteca</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">ILS – ITLA Language School</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Bienestar Estudiantil</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Registro</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Emprendetec</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-semibold text-primary" href="#" data-bs-toggle="dropdown" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Docentes <i class="bi bi-chevron-down small"></i></a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item text-primary" href="Cafedigital.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Café digital ITLA</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Aula Virtual</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Campus Virtual</a></li>
+              <li><a class="dropdown-item text-primary" href="GestionDocente.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Gestión Docente</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">ITLA Alumni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="Transparencia.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Transparencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Actualidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="contacto.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Contactos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="position-relative text-white overflow-hidden">
+    <img src="IMG/IMG1.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1" alt="Fondo Historia">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 z-n1"></div>
+    
+    <div class="container-fluid px-4 py-3 position-relative z-1">
+      <div class="row pt-4 pb-2 align-items-center">
+        <div class="col-12 text-center mt-4">
+          <h1 class="display-5 fw-bold mb-0">Historia</h1>
+        </div>
+        <div class="col-12 text-end mt-3">
+          <a href="index.html" class="text-info fw-semibold text-decoration-none" onmouseenter="this.classList.remove('text-info'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-info');">Inicio</a> / <span class="fw-bold">Historia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section class="py-5 px-3 px-md-5">
+    <div class="container-fluid bg-white rounded-4 shadow-sm p-4 p-md-5 border">
+      
+
+      <div class="mb-4 d-flex align-items-end">
+        <i class="bi bi-bar-chart-line text-muted fs-4"></i>
+        <h6 class="fw-bold text-primary mb-0 ms-2 pb-1 border-bottom border-danger border-2 text-uppercase d-inline-block">Historia</h6>
+      </div>
+
+      <!-- Video de YouTube (El tuyo, en un ratio 16x9 para que se adapte perfecto) -->
+      <div class="ratio ratio-16x9 rounded-4 overflow-hidden mb-5 shadow-sm">
+        <iframe src="https://www.youtube.com/embed/8YDcbtHZzJI?si=I8g1o_6e1JD01DVT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+
+      <div class="row g-5">
+        
+        <div class="col-lg-8">
+          
+          <div class="mb-4 pb-4 border-bottom">
+            <h6 class="fw-bold text-primary mb-3 text-uppercase">Constitución e inicio formal (2000-2001)</h6>
+            <p class="text-muted small mb-3 text-justify">
+              El Instituto Tecnológico de las Américas (ITLA) quedó formalmente constituido como una institución pública mediante el Decreto No. 422-00, de fecha 15 de agosto del año 2000, emitido por el entonces presidente de la República, Dr. Leonel Fernández. La inauguración oficial se llevó a cabo el 13 de agosto de ese mismo año, fecha que se considera como el aniversario institucional.
+            </p>
+            <p class="text-muted small mb-0 text-justify">
+              En marzo de 2001, bajo la presidencia de Hipólito Mejía, se concluyó la obra y se dio inicio a las operaciones del ITLA.
+            </p>
+          </div>
+          <div class="mb-4 pb-4 border-bottom">
+            <h6 class="fw-bold text-primary mb-3 text-uppercase">Construcción y consolidación inicial (2000-2004)</h6>
+            <p class="text-muted small mb-0 text-justify">
+              Durante el periodo 2000-2004, se completó la construcción y equipamiento de cuatro edificios que albergan las aulas y laboratorios destinados a las áreas de Redes de Información, Software, Multimedia y Mecatrónica.
+            </p>
+          </div>
+          <div class="mb-4 pb-4 border-bottom">
+            <h6 class="fw-bold text-primary mb-3 text-uppercase">Expansión tecnológica y certificaciones internacionales (2004)</h6>
+            <p class="text-muted small mb-3 text-justify">
+              En 2004, gracias a una donación del gobierno de Taiwán, se inauguró el centro de Mecatrónica más moderno del país, considerado la cuna de la manufactura moderna en la República Dominicana. Este logro consolidó al ITLA como el instituto de educación tecnológica más importante de la región.
+            </p>
+            <p class="text-muted small mb-0 text-justify">
+              Asimismo, durante esta etapa se impulsaron los primeros programas de capacitación de ciclo corto, alineados con certificaciones internacionales reconocidas en la industria tecnológica.
+            </p>
+          </div>
+          <div class="mb-4 pb-4 border-bottom">
+            <h6 class="fw-bold text-primary mb-3 text-uppercase">Reconocimiento como institución técnica de educación superior (2006 en adelante)</h6>
+            <p class="text-muted small mb-3 text-justify">
+              El 18 de julio de 2006, mediante la resolución 05-2006 emitida por el Ministerio de Educación Superior, Ciencia y Tecnología (MESCyT), el ITLA se convirtió en una Institución Técnica de Educación Superior. Se iniciaron los primeros programas de tecnólogos en Desarrollo de Software, Redes de Información, Mecatrónica, Manufactura Automatizada y Multimedia.
+            </p>
+            <p class="text-muted small mb-0 text-justify">
+              En los años siguientes, la oferta educativa experimentó un crecimiento acelerado, ampliando el catálogo de carreras técnicas superiores de cinco a quince, en respuesta a los avances tecnológicos y las demandas de la industria para la formación del talento humano.
+            </p>
+          </div>
+
+          <div class="mb-4 pb-4 border-bottom">
+            <h6 class="fw-bold text-primary mb-3 text-uppercase">Expansión regional y democratización de la educación técnica (Desde 2021)</h6>
+            <p class="text-muted small mb-3 text-justify">
+              Desde el año 2021, bajo la gestión del presidente Luis Abinader, el ITLA ha enfocado sus esfuerzos en expandir su presencia a diversas regiones del país, con el propósito de acercar la educación técnica superior y continuada a todos los ciudadanos y contribuir a reducir la brecha digital en la República Dominicana.
+            </p>
+            <p class="text-muted small mb-0 text-justify">
+              Actualmente, además de la sede central ubicada en La Caleta y la extensión en Santiago de los Caballeros, el ITLA cuenta con presencia en San Pedro de Macorís, Santo Domingo Este (Los Tres Ojos), Santo Domingo Norte (Villa Mella) y Bonao, provincia Monseñor Nouel, brindando más oportunidades de formación tecnológica a la juventud dominicana.
+            </p>
+          </div>
+
+
+          <div class="mb-0">
+            <h6 class="fw-bold text-primary mb-3 text-uppercase">Innovación y transformación digital (Actualidad)</h6>
+            <p class="text-muted small mb-3 text-justify">
+              En la gestión actual, se ha creado el Innovation Solution Factory, un proyecto tecnológico e innovador dedicado a impulsar la transformación digital en instituciones gubernamentales y del sector privado, marcando un salto cualitativo y cuantitativo hacia la industria 4.0.
+            </p>
+            <p class="text-muted small mb-0 text-justify">
+              El ITLA se guía por los pilares de la innovación y el desarrollo, consolidándose como la principal academia tecnológica del país.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="col-lg-4">
+          <!-- Aquí está la magia: sticky-top y el efecto de sombra al hacer hover (puro Bootstrap) -->
+          <div class="sticky-top">
+            <div class="border border-secondary border-opacity-25 rounded-3 bg-white shadow-sm" onmouseenter="this.classList.replace('shadow-sm', 'shadow')" onmouseleave="this.classList.replace('shadow', 'shadow-sm')">
+              <div class="p-4 border-bottom border-secondary border-opacity-25">
+                <h6 class="fw-bold text-primary mb-0">Departamento de Comunicaciones</h6>
+              </div>
+              <div class="p-4">
+                <a href="mailto:comunicaciones@itla.edu.do" class="text-info text-decoration-none">comunicaciones@itla.edu.do</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="position-relative text-center py-4">
+    <img src="IMG/IMG1.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1" alt="Fondo CTA">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 z-n1"></div>
+    
+    <div class="container py-2">
+      <h3 class="text-white fw-bold mb-3">¡Tu futuro profesional empieza aquí!</h3>
+      <a href="#" class="btn btn-danger fw-bold px-5 rounded-pill text-uppercase">INSCRÍBETE</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark py-5 px-4">
+    <div class="container-fluid">
+      <div class="row g-4 text-white">
+        <div class="col-md-3">
+          <div class="w-50">
+            <img src="IMG/Logo.jpg" alt="Logo ITLA" class="img-fluid object-fit-contain" />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold text-uppercase mb-3">Conócenos</h6>
+          <p class="small text-white-50">El Instituto Tecnológico de las Américas (ITLA) es una institución educativa de la República Dominicana que ofrece formación técnica y tecnológica en áreas como desarrollo de software, redes y mecatrónica, con un enfoque práctico y actualizado.</p>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-bold text-uppercase mb-3">Contáctanos</h6>
+          <a href="tel:8097384852" class="text-white-50 text-decoration-none d-block small">Tel: (809)-738-4852</a>
+          <a href="tel:8097932557" class="text-white-50 text-decoration-none d-block small">Tel: (809)-793-2557</a>
+          <a href="mailto:info@itla.edu.do" class="text-white-50 text-decoration-none d-block small">info@itla.edu.do</a>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-bold text-uppercase mb-3">Búscanos</h6>
+          <p class="small text-white-50">Autopista Las Américas, Km. 27, PCSD, La Caleta, Boca Chica 11606, R.D.</p>
+          <div class="ratio ratio-21x9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.8!2d-69.7!3d18.42!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI1JzEyLjAiTiA2OcKwNDInMDAuMCJX!5e0!3m2!1ses!2sdo!4v1" class="rounded border border-secondary" allowfullscreen loading="lazy" title="Mapa ITLA"></iframe>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-bold text-uppercase mb-3">Infórmate</h6>
+          <a href="#" class="text-white-50 text-decoration-none d-block small">Términos de Uso</a>
+          <a href="#" class="text-white-50 text-decoration-none d-block small">Política de Privacidad</a>
+          <a href="#" class="text-white-50 text-decoration-none d-block small">Preguntas Frecuentes</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FOOTER BOTTOM -->
+  <div class="bg-white border-top py-4 px-4">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-8">
+        <div class="d-flex gap-2 flex-wrap mb-3">
+          <span class="border border-secondary rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-secondary p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A2</span><small>2021</small>
+          </span>
+          <span class="border border-success rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-success p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A3</span><small>2014</small>
+          </span>
+          <span class="border border-secondary rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-secondary p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A4</span><small>2014</small>
+          </span>
+          <span class="border border-warning rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-warning p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">E1</span><small>2022</small>
+          </span>
+          <span class="border border-secondary rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-secondary p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A5</span><small>2019</small>
+          </span>
+          <span class="border border-info rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-info p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A6</span><small>2018</small>
+          </span>
+        </div>
+        <p class="mb-0 small text-muted">© 2026 Todos los Derechos Reservados.</p>
+      </div>
+      
+      <div class="col-lg-4 d-flex flex-column align-items-start align-items-lg-end">
+        <div class="mb-3 col-5 col-md-3 col-lg-5">
+          <img src="IMG/indocal.jpg" alt="Indocal" class="img-fluid object-fit-contain" />
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <span class="fw-bold small text-dark text-uppercase">Síguenos</span>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Técnico Superior - ITLA</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+</head>
+
+<body class="bg-light">
+
+  <!-- ══════════ TOP BAR ══════════ -->
+  <div class="bg-primary px-4 py-2">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-4 col-md-2 col-lg-1">
+        <img src="IMG/Logo.jpg" alt="Logo ITLA" class="img-fluid object-fit-contain" />
+      </div>
+      <div class="col-8 col-md-6 col-lg-4 d-flex align-items-center justify-content-end gap-3">
+        <div class="input-group">
+          <input type="text" class="form-control rounded-pill rounded-end border-0" placeholder="¿Qué quieres buscar?" />
+          <button class="btn btn-danger rounded-pill rounded-start ms-1">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <i class="bi bi-grid-3x3-gap-fill text-white fs-5"></i>
+        <i class="bi bi-globe2 text-white fs-5"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ NAVBAR ══════════ -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+    <div class="container-fluid px-4">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav gap-1">
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="index.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Inicio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-semibold text-primary" href="#" data-bs-toggle="dropdown" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Sobre ITLA <i class="bi bi-chevron-down small"></i></a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item text-primary" href="quienes.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Quienes somos</a></li>
+              <li><a class="dropdown-item text-primary" href="historia.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Historia</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Organigrama</a></li>
+              <li><a class="dropdown-item text-primary" href="rectoria.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Rectoría</a></li>
+              <li><a class="dropdown-item text-primary d-flex justify-content-between align-items-center" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Vicerrectoría <i class="bi bi-caret-right-fill small text-secondary"></i></a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Marco legal</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Normativas Académicas</a></li>
+              <li><a class="dropdown-item text-primary" href="CalidadDeGestion.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Calidad en la gestión</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-semibold text-danger" href="#" data-bs-toggle="dropdown">Oferta Académica <i class="bi bi-chevron-down small"></i></a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item text-danger fw-bold" href="Tecnicosuperior.html">Técnico Superior</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Educación Continua</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Admisiones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Becas</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-semibold text-primary" href="#" data-bs-toggle="dropdown" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Estudiantes <i class="bi bi-chevron-down small"></i></a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Residencia Académica</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Transporte</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Biblioteca</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">ILS – ITLA Language School</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Bienestar Estudiantil</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Registro</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Emprendetec</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link fw-semibold text-primary" href="#" data-bs-toggle="dropdown" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Docentes <i class="bi bi-chevron-down small"></i></a>
+            <ul class="dropdown-menu shadow-sm border-0">
+              <li><a class="dropdown-item text-primary" href="Cafedigital.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Café digital ITLA</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Aula Virtual</a></li>
+              <li><a class="dropdown-item text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Campus Virtual</a></li>
+              <li><a class="dropdown-item text-primary" href="GestionDocente.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger', 'fw-bold');" onmouseleave="this.classList.remove('text-danger', 'fw-bold'); this.classList.add('text-primary');">Gestión Docente</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">ITLA Alumni</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="Transparencia.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Transparencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="#" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Actualidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-semibold text-primary" href="contacto.html" onmouseenter="this.classList.remove('text-primary'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-primary');">Contactos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══════════ HERO SECTION: TÉCNICO SUPERIOR ══════════ -->
+  <section class="position-relative text-white overflow-hidden">
+    <img src="IMG/IMG1.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1" alt="Fondo Hero">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 z-n1"></div>
+    
+    <div class="container-fluid px-4 py-3 position-relative z-1">
+      <div class="row pt-4 pb-2 align-items-center">
+        <div class="col-12 text-center mt-4">
+          <h1 class="display-5 fw-bold mb-0">Técnico Superior</h1>
+        </div>
+        <div class="col-12 text-end mt-3">
+          <a href="index.html" class="text-info fw-semibold text-decoration-none" onmouseenter="this.classList.remove('text-info'); this.classList.add('text-danger');" onmouseleave="this.classList.remove('text-danger'); this.classList.add('text-info');">Inicio</a> / <span class="fw-bold">Técnico Superior</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTENIDO PRINCIPAL: 16 TARJETAS DE OFERTA ACADÉMICA ══════════ -->
+  <section class="py-5 px-3 px-md-5">
+    <div class="container-fluid bg-white rounded-4 shadow-sm p-4 p-md-5 border">
+      
+      <div class="mb-5 d-flex align-items-end">
+        <i class="bi bi-bar-chart-line text-muted fs-4"></i>
+        <h6 class="fw-bold text-primary mb-0 ms-2 pb-1 border-bottom border-danger border-2 text-uppercase d-inline-block">Técnico Superior</h6>
+      </div>
+
+   
+      <div class="row g-4">
+        
+       
+        <div class="col-12 col-md-6 col-lg-3">
+         
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+           
+            <span class="position-absolute top-0 start-50 translate-middle-x bg-danger text-white fw-bold px-4 py-1 rounded-bottom shadow d-flex align-items-center gap-2 z-1">
+              <span class="spinner-grow spinner-grow-sm" aria-hidden="true"></span> NUEVA
+            </span>
+
+           
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/ciberseguridad.png" class="object-fit-cover w-100 h-100" alt="Ciberseguridad">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Tecnólogo en Ciberseguridad</h6>
+              <p class="text-muted small mb-2">2 años (6 cuatrimestres) | 114 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Semipresencial</p>
+              <p class="text-danger small mb-4">Recinto Santo Domingo Norte</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/videojuegos1.jpg" class="object-fit-cover w-100 h-100" alt="Videojuegos">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Simulaciones Interactivas y Videojuegos</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 105 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/telecomunicaciones.jpg" class="object-fit-cover w-100 h-100" alt="Telecomunicaciones">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Telecomunicaciones</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 128 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/inteligenciaartificial.jpg" class="object-fit-cover w-100 h-100" alt="Inteligencia Artificial">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Inteligencia Artificial</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 105 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+       
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/forense.jpg" class="object-fit-cover w-100 h-100" alt="Informática Forense">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Informática Forense</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 116 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/renovables.jpg" class="object-fit-cover w-100 h-100" alt="Energías Renovables">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Energías Renovables</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 129 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/redes.jpg" class="object-fit-cover w-100 h-100" alt="Redes de Información">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Redes de Información</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 141 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/mecatronica.jpg" class="object-fit-cover w-100 h-100" alt="Mecatrónica">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Mecatrónica</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 181 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+     
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/manufactura.jpg" class="object-fit-cover w-100 h-100" alt="Manufactura Automatizada">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Manufactura Automatizada</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 163 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/manufactura medico.jpg" class="object-fit-cover w-100 h-100" alt="Manufactura de Dispositivos Médicos">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Manufactura de Dispositivos Médicos</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 154 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/industrial.jpg" class="object-fit-cover w-100 h-100" alt="Diseño Industrial">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Diseño Industrial</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 162 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/multimedia.jpg" class="object-fit-cover w-100 h-100" alt="Multimedia">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Multimedia</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 151 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/sonido.jpg" class="object-fit-cover w-100 h-100" alt="Sonido">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Sonido</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 146 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/software.jpg" class="object-fit-cover w-100 h-100" alt="Desarrollo de Software">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Desarrollo de Software</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 150 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/analitica.jpg" class="object-fit-cover w-100 h-100" alt="Analítica y Ciencia de los Datos">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Analítica y Ciencia de los Datos</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 105 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card bg-white border-0 shadow h-100 rounded-4 position-relative" 
+               onmouseenter="this.classList.remove('border-0', 'shadow'); this.classList.add('border', 'border-primary', 'shadow-lg');" 
+               onmouseleave="this.classList.remove('border', 'border-primary', 'shadow-lg'); this.classList.add('border-0', 'shadow');">
+            
+            <div class="p-3 pb-0">
+              <div class="ratio ratio-16x9 rounded-3 overflow-hidden">
+                <img src="IMG/seguridadinformatica.jpg" class="object-fit-cover w-100 h-100" alt="Seguridad Informática">
+              </div>
+            </div>
+
+            <div class="card-body d-flex flex-column p-4 pt-3">
+              <h6 class="fw-bold text-primary mb-3 text-uppercase">Seguridad Informática</h6>
+              <p class="text-muted small mb-2">2 años y 4 meses | 122 créditos cuatrimestres</p>
+              <p class="text-muted small mb-2">Modalidad: Presencial</p>
+              <p class="text-danger small mb-4">Recinto Caleta</p>
+              <div class="mt-auto">
+                <div class="d-flex justify-content-between gap-2 mb-3">
+                  <button class="btn btn-outline-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Detalle</button>
+                  <button class="btn btn-primary rounded-pill fw-bold text-uppercase w-50 py-2 small">Inscribirme</button>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="text-muted p-2 d-inline-block text-decoration-none" onmouseenter="this.classList.remove('text-muted'); this.classList.add('bg-primary', 'text-white', 'rounded-pill');" onmouseleave="this.classList.remove('bg-primary', 'text-white', 'rounded-pill'); this.classList.add('text-muted');"><i class="bi bi-share"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> 
+    </div>
+  </section>
+
+  <!-- ══════════ CTA BANNER ══════════ -->
+  <section class="position-relative text-center py-4">
+    <img src="IMG/IMG1.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover z-n1" alt="Fondo CTA">
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 z-n1"></div>
+    
+    <div class="container py-2">
+      <h3 class="text-white fw-bold mb-3">¡Tu futuro profesional empieza aquí!</h3>
+      <a href="#" class="btn btn-danger fw-bold px-5 rounded-pill text-uppercase">INSCRÍBETE</a>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer class="bg-dark py-5 px-4">
+    <div class="container-fluid">
+      <div class="row g-4 text-white">
+        <div class="col-md-3">
+          <div class="w-50">
+            <img src="IMG/Logo.jpg" alt="Logo ITLA" class="img-fluid object-fit-contain" />
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold text-uppercase mb-3">Conócenos</h6>
+          <p class="small text-white-50">El Instituto Tecnológico de las Américas (ITLA) es una institución educativa de la República Dominicana que ofrece formación técnica y tecnológica en áreas como desarrollo de software, redes y mecatrónica, con un enfoque práctico y actualizado.</p>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-bold text-uppercase mb-3">Contáctanos</h6>
+          <a href="tel:8097384852" class="text-white-50 text-decoration-none d-block small">Tel: (809)-738-4852</a>
+          <a href="tel:8097932557" class="text-white-50 text-decoration-none d-block small">Tel: (809)-793-2557</a>
+          <a href="mailto:info@itla.edu.do" class="text-white-50 text-decoration-none d-block small">info@itla.edu.do</a>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-bold text-uppercase mb-3">Búscanos</h6>
+          <p class="small text-white-50">Autopista Las Américas, Km. 27, PCSD, La Caleta, Boca Chica 11606, R.D.</p>
+          <div class="ratio ratio-21x9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.8!2d-69.7!3d18.42!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDI1JzEyLjAiTiA2OcKwNDInMDAuMCJX!5e0!3m2!1ses!2sdo!4v1" class="rounded border border-secondary" allowfullscreen loading="lazy" title="Mapa ITLA"></iframe>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-bold text-uppercase mb-3">Infórmate</h6>
+          <a href="#" class="text-white-50 text-decoration-none d-block small">Términos de Uso</a>
+          <a href="#" class="text-white-50 text-decoration-none d-block small">Política de Privacidad</a>
+          <a href="#" class="text-white-50 text-decoration-none d-block small">Preguntas Frecuentes</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════ FOOTER BOTTOM ══════════ -->
+  <div class="bg-white border-top py-4 px-4">
+    <div class="row align-items-center gy-4">
+      <div class="col-lg-8">
+        <div class="d-flex gap-2 flex-wrap mb-3">
+          <span class="border border-secondary rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-secondary p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A2</span><small>2021</small>
+          </span>
+          <span class="border border-success rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-success p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A3</span><small>2014</small>
+          </span>
+          <span class="border border-secondary rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-secondary p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A4</span><small>2014</small>
+          </span>
+          <span class="border border-warning rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-warning p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">E1</span><small>2022</small>
+          </span>
+          <span class="border border-secondary rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-secondary p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A5</span><small>2019</small>
+          </span>
+          <span class="border border-info rounded-circle d-inline-flex flex-column align-items-center justify-content-center fw-bold text-info p-2 lh-1 text-center">
+            <small>NORTIC</small><span class="fs-6 fw-bolder">A6</span><small>2018</small>
+          </span>
+        </div>
+        <p class="mb-0 small text-muted">© 2026 Todos los Derechos Reservados.</p>
+      </div>
+      
+      <div class="col-lg-4 d-flex flex-column align-items-start align-items-lg-end">
+        <div class="mb-3 col-5 col-md-3 col-lg-5">
+          <img src="IMG/indocal.jpg" alt="Indocal" class="img-fluid object-fit-contain" />
+        </div>
+        <div class="d-flex align-items-center gap-2">
+          <span class="fw-bold small text-dark text-uppercase">Síguenos</span>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
